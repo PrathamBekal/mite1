@@ -1,0 +1,35 @@
+#include<stdio.h>
+main()
+{
+float a,b;
+char op;
+float res;
+printf("enter operands\n");
+scanf("%f%f",&a,&b);
+printf("enter operator\n");
+scanf("%s",&op);
+switch(op)
+{
+case '+':res=a+b;
+printf("sum=%f\n",res);
+break;
+case '-':res=a-b;
+printf("difference=%f\n",res);
+break;
+case '*':res=a*b;
+printf("product=%f",res);
+break;
+case '/':if(b!=0)
+{
+res=a/b;
+printf("quotient=%f",res);
+}
+else
+{
+printf("divide by zero error\n");
+}
+break;
+default:printf("invalid error\n");
+break;
+}
+}
